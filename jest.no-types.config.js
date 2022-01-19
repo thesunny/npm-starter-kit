@@ -1,4 +1,4 @@
-const config = require("./jest.config")
+const config = require("./jest.types.config")
 
 /**
  * Disable type checking which speeds up test running from about 3000ms
