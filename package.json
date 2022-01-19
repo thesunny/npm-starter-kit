@@ -19,7 +19,7 @@
   },
   "scripts": {
     "build": "rm -rf ./.dist/ && tsc -p tsconfig.ts-build.json && echo 'Finished Building'",
-    "prepublish": "yarn test:once && yarn build && yarn version --patch && echo '\"npm publish --access=public\" to publish to npm'",
+    "publish:patch": "yarn test:once && yarn build && yarn version --patch && echo '\"npm publish --access=public\" to publish to npm'",
     "--- test": "#",
     "test:once": "jest --config=jest.types.config.js",
     "test:watch": "jest --watch --config=jest.no-types.config.js",
